@@ -1,0 +1,87 @@
+Cloud Question
+RECIPE SHARING PLATFORM
+
+
+
+You are developing a Recipe Sharing Platform that allows users to browse, share, and manage recipes. The platform is a full-stack application with a Spring Boot backend and an Angular frontend. The application will be deployed on Google Cloud Platform (GCP) using Cloud SQL for database management, Artifact Registry for storing Docker images, and Cloud Run for deploying both the backend and frontend applications. The platform needs to be scalable, secure, and performant, leveraging GCP services for continuous integration and deployment.
+
+
+
+Tasks:
+
+Set Up MySQL Database
+Create a Cloud SQL instance named 'recipedb' in the 'us-central1' region.
+Initialize the database schemas and tables for managing recipes and users.
+Configure secure connections to allow access from the Cloud Run services.
+Configure GitHub Repositories
+Set up separate GitHub repositories for the Spring Boot backend and Angular frontend applications.
+Implement a branching strategy (main, develop, feature) for version control and collaborative development.
+Create and Configure a VM Instance for Backend
+Launch a VM instance named 'buildvm' with the appropriate machine type and specifications.
+Install JDK, Maven, and Docker on the VM to build and dockerize the Spring Boot application.
+Clone the backend source code from GitHub, build the application, and create a Docker image.
+Deploy Backend Application to Cloud Run
+Push the Docker image of the backend application to Google Artifact Registry.
+Deploy the Dockerized Spring Boot application to Cloud Run, configuring environment variables and database connections to Cloud SQL.
+Prepare and Deploy Angular Frontend Application
+Clone the Angular repository from GitHub and update the API endpoint URLs to connect to the backend service.
+Use Google Cloud Build to automate the build and dockerization of the Angular application.
+Push the Docker image to Artifact Registry and deploy it to Cloud Run.
+Implement CI/CD Pipeline
+Configure Google Cloud Build and Cloud Deploy to automate the build, test, and deployment processes for frontend application using cloudrun.
+Validation and Monitoring Setup
+Validate that the backend and frontend services are running correctly on Cloud Run.
+Set up monitoring and alerts to track application performance and health.
+
+
+Specifications:
+	Deploy Backend Service on Cloud Run
+
+Deploy a backend service named recipe-backend using Google Cloud Run.
+Ensure the service is deployed in the us-central1-a region.
+	Deploy Frontend Service on Cloud Run
+
+Deploy a frontend service named recipe-frontend using Google Cloud Run.
+Ensure the service is deployed in the us-central1-a region.
+	Create and Configure a Cloud SQL Instance
+
+Create a Cloud SQL instance named recipedb.
+The instance should be located in the us-central1 region.
+The instance should use the Enterprise edition of MySQL engine.
+It should run with the machine type db-f1-micro.
+Set the SQL server storage capacity to 10GB.
+The database version should be MySQL 8.
+	Create a Virtual Machine (VM) Instance
+
+To make a docker environment, Create a VM instance in the location of 'us-central1-a' named buildvm
+	Setup a Google Container Registry (GCR)
+
+Ensure that a Google Container Registry (Artifact Registry)  exists for your project repository.
+	Create a Cloud Build Trigger
+
+Create a Cloud Build Trigger named recipefe for the frontend service deployment in the region of 'us-central1'.
+	Create a Cloud Deploy Pipeline
+
+Set up a Cloud Deploy Pipeline named recipepipeline for the application deployment in the region of 'global'.
+	Configure Monitoring and Alerts
+
+Create an alert policy named billable_instance_time_alert.
+The policy should specifically monitor Cloud Run revisions using the metric.
+Ensure the alert monitors the billable instance time metric for your Cloud Run services.
+
+
+
+
+For a detailed description, please refer to the given SRS document provided to you.
+
+Note :
+The cloud question will not be submitted if "Submit " is not done atleast once
+
+
+
+
+https://accounts.google.com/AddSession?service=accountsettings&sarp=1&continue=https%3A%2F%2Fconsole.cloud.google.com%2Fhome%2Fdashboard%3Fproject%3Dcloudcourseb9d41#Email=crippledtasting@iamneo.cloud
+
+crippledtasting@iamneo.cloud
+
+#W@!>;YG=K
